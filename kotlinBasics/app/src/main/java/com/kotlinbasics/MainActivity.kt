@@ -1,6 +1,7 @@
 package com.kotlinbasics
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,12 +28,27 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-      //  week02Variables()
-      //  week02Functions()
-        week03Classes()
+//        week02Variables()
+//        week02Functions()
+//        week03Classes()
+        week03Collections()
 
 
     }
+}
+
+private fun week03Collections(){
+    Log.d("KotlinWeek03","== Kotlin Collections ==")
+
+    val fruits = listOf("apple","banana","orange")
+    //fruits.add("kiwi") - error
+    Log.d("KotlinWeek03","Fruits : $fruits")
+
+    for(fruit in fruits){
+        Log.d("KotlinWeek03","Fruit : $fruit")
+    }
+
+
 }
 
 private fun week03Classes() {
